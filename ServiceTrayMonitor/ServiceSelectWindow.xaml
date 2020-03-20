@@ -1,0 +1,48 @@
+﻿<Window x:Class="Joseph.ServiceTrayMonitor.ServiceSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Closed="OnWindowClosed" WindowStartupLocation="CenterScreen"
+        Title="Service Selection" Height="450" Width="800"
+        ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+            <ColumnDefinition Width="80"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"
+                  ItemsSource="{Binding}" Name="servicesListView" SelectionMode="Single">
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                </Style>
+            </ListView.Resources>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Path=DisplayName}"
+                        Header="显示名称" Width="300"></GridViewColumn>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Path=ServiceName}"
+                        Header="服务名" Width="250"></GridViewColumn>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Path=Status}"
+                        Header="状态" Width="80"></GridViewColumn>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Path=StartType}"
+                        Header="启动选项" Width="80"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Grid.Column="1" Grid.Row="1" Margin="0,10,5,0" Click="OnOK">确定</Button>
+        <Button Grid.Column="2" Grid.Row="1" Margin="5,10,0,0" Click="OnCancel">取消</Button>
+    </Grid>
+</Window>

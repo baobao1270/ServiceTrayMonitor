@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppCenterToken" xml:space="preserve">
+    <value>6aabfea1-0638-4f58-b8b9-60144643e578</value>
+  </data>
+  <data name="ArgAutoRunUser" xml:space="preserve">
+    <value>/AutoStart</value>
+  </data>
+  <data name="ArgHideMainWindow" xml:space="preserve">
+    <value>/HideMainWindow</value>
+  </data>
+  <data name="ConstDataTimeFormat" xml:space="preserve">
+    <value>yyyy/MM/dd HH:mm:ss (UTCz)</value>
+  </data>
+  <data name="ConstLogFileSelectorFilter" xml:space="preserve">
+    <value>日志文件 (*.txt;*.log)|*.txt;*.log|所有文件 (*.*)|*.*</value>
+  </data>
+  <data name="EnviromentNameWindir" xml:space="preserve">
+    <value>windir</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IconPending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconPending.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconRestart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconRestart.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStart.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStop.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MicrosoftGraphApiApplicationId" xml:space="preserve">
+    <value>32d854d4-d234-4c1a-9634-d0d6aa373935</value>
+  </data>
+  <data name="MicrosoftGraphApiClientSecret" xml:space="preserve">
+    <value>.t5qAaAM_BL_mz=zLn2KFtclHAsIHg87</value>
+  </data>
+  <data name="MicrosoftGraphApiSpoce" xml:space="preserve">
+    <value>User.Read+Files.ReadWrite.All</value>
+  </data>
+  <data name="MsgCloudSyncDownloadFailedError" xml:space="preserve">
+    <value>下载文件时发生了一个错误。
+
+详细信息：
+{0}</value>
+  </data>
+  <data name="MsgCloudSyncDownloadSuccess" xml:space="preserve">
+    <value>下载成功。</value>
+    <comment>。</comment>
+  </data>
+  <data name="MsgCloudSyncGeneralError" xml:space="preserve">
+    <value>在云同步页面发生错误。
+
+详细信息：
+{0}</value>
+  </data>
+  <data name="MsgCloudSyncGetLastSyncDateFailedError" xml:space="preserve">
+    <value>获取同步信息时发生了一个错误。
+
+详细信息：
+{0}</value>
+  </data>
+  <data name="MsgCloudSyncMicrosoftAccountLogout" xml:space="preserve">
+    <value>您已从 Service Tray Monitor 中登出 Microsoft 账户。</value>
+  </data>
+  <data name="MsgCloudSyncNullOrEmptyRemoteFileError" xml:space="preserve">
+    <value>云端配置文件为空。将继续使用本地配置文件。</value>
+  </data>
+  <data name="MsgCloudSyncParseError" xml:space="preserve">
+    <value>云端配置文件解析失败。将继续使用本地配置文件。</value>
+  </data>
+  <data name="MsgCloudSyncUploadFailedError" xml:space="preserve">
+    <value>上传文件时发生了一个错误。
+
+详细信息：
+{0}</value>
+  </data>
+  <data name="MsgCloudSyncUploadSuccess" xml:space="preserve">
+    <value>上传成功。</value>
+  </data>
+  <data name="MsgConfigFileBroken" xml:space="preserve">
+    <value>配置文件已损坏，将生成新的配置文件。</value>
+  </data>
+  <data name="MsgConfirmDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="MsgConfirmMainWindowClose" xml:space="preserve">
+    <value>关闭主窗口将导致未保存的数据丢失。是否要退出？</value>
+  </data>
+  <data name="MsgConfirmSave" xml:space="preserve">
+    <value>是否要保存当前配置？</value>
+  </data>
+  <data name="MsgHelp" xml:space="preserve">
+    <value>托盘别名：显示在托盘右键菜单里的别名，尽量短小以减小菜单长度。
+日志路径：对于实时将纯文本日志写入磁盘的服务，填写此项以在右键菜单快速查看日志。如果没有日志、不需要或不适用，请留空。
+服务名：在 Windows 系统中注册的唯一的 ServiceName。
+
+要排序列表，请在程序目录下找到 config.json，并修改其中的顺序。
+要将程序加入开机启动项，请在启动程序时，加入 /AutoStart 参数。
+
+调试信息
+当前项目的 GUID：{0}</value>
+  </data>
+  <data name="MsgNoVaildLogPath" xml:space="preserve">
+    <value>没有有效的日志路径。</value>
+  </data>
+  <data name="MsgSelectItemToBeDeleted" xml:space="preserve">
+    <value>请先选择要删除的配置项。</value>
+  </data>
+  <data name="MsgServiceRestartSuccess" xml:space="preserve">
+    <value>服务 "{0}" 重启成功</value>
+  </data>
+  <data name="MsgServiceStartSuccess" xml:space="preserve">
+    <value>服务 "{0}" 启动成功</value>
+  </data>
+  <data name="MsgServiceStopSuccess" xml:space="preserve">
+    <value>服务 "{0}" 停止成功</value>
+  </data>
+  <data name="PathCloudSyncConfigFile" xml:space="preserve">
+    <value>config.json</value>
+  </data>
+  <data name="PathConfigFile" xml:space="preserve">
+    <value>\config.txt</value>
+  </data>
+  <data name="PathDefaultWindowsRoot" xml:space="preserve">
+    <value>C:\WINDOWS</value>
+  </data>
+  <data name="PathExplorerExe" xml:space="preserve">
+    <value>explorer.exe</value>
+  </data>
+  <data name="PathMSALTokenCache" xml:space="preserve">
+    <value>\msal_token.cache</value>
+  </data>
+  <data name="RegValueName" xml:space="preserve">
+    <value>ServiceTrayMonitor</value>
+  </data>
+  <data name="ServicesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskmgrIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taskmgr.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UICloudSyncLastSyncStateNotSynced" xml:space="preserve">
+    <value>未同步</value>
+  </data>
+  <data name="UICloudSyncLastSyncStateSyncing" xml:space="preserve">
+    <value>正在传输……</value>
+  </data>
+  <data name="UICloudSyncLoginStateLoading" xml:space="preserve">
+    <value>加载中……</value>
+  </data>
+  <data name="UISaveButtonContentTextEdited" xml:space="preserve">
+    <value>保存*</value>
+  </data>
+  <data name="UISaveButtonContentTextNormal" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="UITrayMenuItemOperationRestart" xml:space="preserve">
+    <value>重启</value>
+  </data>
+  <data name="UITrayMenuItemOperationShowLog" xml:space="preserve">
+    <value>查看日志</value>
+  </data>
+  <data name="UITrayMenuItemOperationStart" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="UITrayMenuItemOperationStop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="UITrayMenuItemStatusPending" xml:space="preserve">
+    <value>获取中</value>
+  </data>
+  <data name="UITrayMenuItemStatusPlaceHolder" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="MsgServiceStopAllSuccess" xml:space="preserve">
+    <value>停止了所有服务。</value>
+  </data>
+  <data name="MsgServiceStopAllHaveError" xml:space="preserve">
+    <value>部分服务在停止时出现错误，但其他服务已被正常停止。
+
+以下是错误的详细内容：
+{0}</value>
+  </data>
+  <data name="MsgServiceStartAllSuccess" xml:space="preserve">
+    <value>启动了所有服务。</value>
+  </data>
+  <data name="MsgServiceStartAllHaveError" xml:space="preserve">
+    <value>部分服务在启动时出现错误，但其他服务已被正常启动。
+
+以下是错误的详细内容：
+{0}</value>
+  </data>
+  <data name="MsgStartingStartedService" xml:space="preserve">
+    <value>服务 {0} 已启动。</value>
+  </data>
+  <data name="MsgStoppingStopedService" xml:space="preserve">
+    <value>服务 {0} 已停止。</value>
+  </data>
+  <data name="MsgUnableToLoadConfigTimerIntervalMs" xml:space="preserve">
+    <value>无法读取配置文件中的“服务状态检测间隔“（TimerIntervalMs）值。
+将使用默认值：{0}（毫秒）。</value>
+  </data>
+  <data name="ConstDefaultInterval" xml:space="preserve">
+    <value>3000</value>
+  </data>
+  <data name="PathTimerConfigFile" xml:space="preserve">
+    <value>\timer.conf</value>
+  </data>
+  <data name="MsgCreatedTimerConfigFile" xml:space="preserve">
+    <value>创建了检测服务状态时间间隔的配置文件。文件使用默认值（{0}ms）。
+如果要修改该值，请直接修改 {1} 文件。
+</value>
+  </data>
+</root>

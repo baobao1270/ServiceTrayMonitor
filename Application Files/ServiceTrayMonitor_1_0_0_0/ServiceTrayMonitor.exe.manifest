@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ServiceTrayMonitor.exe" version="1.0.0.0" publicKeyToken="9a954ec7e258076c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\taskmgr.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ServiceTrayMonitor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ServiceTrayMonitor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+             如果想要更改 Windows 用户帐户控制级别，请使用
+             以下节点之一替换 requestedExecutionLevel 节点。n
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 元素将禁用文件和注册表虚拟化。
+            如果你的应用程序需要此虚拟化来实现向后兼容性，则删除此
+            元素。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServiceTrayMonitor.exe" size="289184">
+      <assemblyIdentity name="ServiceTrayMonitor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rPD2kVQbErNsd3h6WoKBadITJQk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\taskmgr.ico" size="108046">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YAy5Gx9u+wMHqBG17kUS6MoKMU0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 设计此应用程序与其一起工作且已针对此应用程序进行测试的
+           Windows 版本的列表。取消评论适当的元素，
+           Windows 将自动选择最兼容的环境。 -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=JOSEPH-PC\Joseph" issuerKeyHash="660b1b952fffce77e14204bd057ff3ff6ceac112" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NNlXUD4H4CvwcBmJ1AzCYdG6WXo=</DigestValue></Reference></SignedInfo><SignatureValue>oyynakhkXOnvnkWUjgb8uVQRkvJPzwfGf+2hgUR1LF6vKdolzdP+aXIWJym2RmVVbOt3Tl03oC6kYQbqp9XvcCktypZRA5SY1fQI3dQ9MWktdugOobjtXbggbxG4TK9URsfH28t/6d462MzCsPj4itvQNwtgzZPHcKIL9Kn61kw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>znV5AuML380ShdXSLN17RWarsllUNAFee3glGYqggHLl1EG+HUz3I/H3d2TTlPvOuibnXA40ZtU1JR7MPDiihjh1KRAOw5EDdQoDh2f7jkQWmG7iGh1hDk5hFb7Qcu/Fy58IdzQDa7E6u120gLmLjzvBFXfr5qbASOrPg13TTcU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7a59bad161c20cd4891970f02be0073e5057d934" Description="" Url=""><as:assemblyIdentity name="ServiceTrayMonitor.exe" version="1.0.0.0" publicKeyToken="9a954ec7e258076c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JOSEPH-PC\Joseph</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>msZzJBqkp7OUQRZ/AmAy1HdxRmw=</DigestValue></Reference></SignedInfo><SignatureValue>PnGfZBv+SNeSozk5wndNjeH2348TirkikIXkJyWScXpV6RbqK8WIyudWUX7dv1keSsdoMUgbrfOoiNnVLKBJi/LHdYiPxYMkSh7geMVQDnGzNDQjt+lFFYfspWzbbMXvj+ja9DkQIqkSlFhQ7/BTpF/JjwoOUXopLKEUGiB34/Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>znV5AuML380ShdXSLN17RWarsllUNAFee3glGYqggHLl1EG+HUz3I/H3d2TTlPvOuibnXA40ZtU1JR7MPDiihjh1KRAOw5EDdQoDh2f7jkQWmG7iGh1hDk5hFb7Qcu/Fy58IdzQDa7E6u120gLmLjzvBFXfr5qbASOrPg13TTcU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQTkAytE0jUbRGKHvQBIa6uTANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAASgBPAFMARQBQAEgALQBQAEMAXABKAG8AcwBlAHAAaDAeFw0yMDAyMjgxODI5NTNaFw0yMTAyMjgwMDI5NTNaMCsxKTAnBgNVBAMeIABKAE8AUwBFAFAASAAtAFAAQwBcAEoAbwBzAGUAcABoMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOdXkC4wvfzRKF1dIs3XtFZquyWVQ0AV57eCUZiqCAcuXUQb4dTPcj8fd3ZNOU+866JudcDjRm1TUlHsw8OKKGOHUpEA7DkQN1CgOHZ/uORBaYbuIaHWEOTmEVvtBy78XLnwh3NANrsTq7XbSAuYuPO8EVd+vmpsBI6s+DXdNNxQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAEO6CktXK1ZAumMo7MPV2kCmLTvQbKlzCGszQNiSweqGky8As19yfSzVaVQenmN9aLZe7IUg6Sq7l2pWwzmc2yWlDrj/u/BlFkQ19/9JBECEp9WU+DV+g5WTpScYqUKDNfoT+cJu05pVsGKZ0R2v0QJkY9wTomXbeUrQnmn9ZHSu</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
